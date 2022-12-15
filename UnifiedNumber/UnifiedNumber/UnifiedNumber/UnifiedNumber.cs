@@ -4,9 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UnifiedNumber
+namespace unifiednumber
 {
-    class UnifiedNumber
+    class unifiednumber
     {
+        private int _value;
+
+        public int Value 
+        {   
+            get { return _value; }
+            set { _value = value; }
+        }
     }
 }

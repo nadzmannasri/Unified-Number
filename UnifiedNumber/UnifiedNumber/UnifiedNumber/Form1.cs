@@ -8,13 +8,31 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UnifiedNumber
+namespace unifiednumber
 {
-    public partial class Form1 : Form
+    public partial class UnifiedNumber : Form
     {
-        public Form1()
+        unifiednumber myunifiednumber = new unifiednumber();
+        public UnifiedNumber()
         {
             InitializeComponent();
+        }
+
+        private void enterbutton_Click(object sender, EventArgs e)
+        {
+            int temp;
+            try
+            {
+                temp = Convert.ToInt32(Valuetextbox.Text);
+            }
+            catch (Exception excep)
+            {
+                MsgLabel.Text = "Message: Please Give A Valid Value";
+                return;
+            }
+            myunifiednumber.Value = temp;
+            valuelabel.Text = Convert.ToString(temp);
+
         }
     }
 }
