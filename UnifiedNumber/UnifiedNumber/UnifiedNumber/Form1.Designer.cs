@@ -97,6 +97,7 @@
             this.translatebutton.Text = "Translate";
             this.translatebutton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.translatebutton.UseVisualStyleBackColor = true;
+            this.translatebutton.Click += new System.EventHandler(this.translatebutton_Click);
             // 
             // AnswertextBox
             // 

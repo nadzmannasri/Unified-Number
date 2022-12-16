@@ -9,3 +9,14 @@ C:\Users\nadzm\OneDrive\Desktop\SEM 7\software design\unified number\UnifiedNumb
 C:\Users\nadzm\OneDrive\Desktop\SEM 7\software design\unified number\UnifiedNumber\UnifiedNumber\UnifiedNumber\obj\Debug\UnifiedNumber.exe
 C:\Users\nadzm\OneDrive\Desktop\SEM 7\software design\unified number\UnifiedNumber\UnifiedNumber\UnifiedNumber\obj\Debug\UnifiedNumber.pdb
 C:\Users\nadzm\OneDrive\Desktop\SEM 7\software design\unified number\UnifiedNumber\UnifiedNumber\UnifiedNumber\obj\Debug\unifiednumber.UnifiedNumber.resources
+C:\Users\PSCAD\Desktop\UnifiedNumber\UnifiedNumber\UnifiedNumber\UnifiedNumber\bin\Debug\UnifiedNumber.exe.config
+C:\Users\PSCAD\Desktop\UnifiedNumber\UnifiedNumber\UnifiedNumber\UnifiedNumber\bin\Debug\UnifiedNumber.exe
+C:\Users\PSCAD\Desktop\UnifiedNumber\UnifiedNumber\UnifiedNumber\UnifiedNumber\bin\Debug\UnifiedNumber.pdb
+C:\Users\PSCAD\Desktop\UnifiedNumber\UnifiedNumber\UnifiedNumber\UnifiedNumber\obj\Debug\UnifiedNumber.csproj.AssemblyReference.cache
+C:\Users\PSCAD\Desktop\UnifiedNumber\UnifiedNumber\UnifiedNumber\UnifiedNumber\obj\Debug\UnifiedNumber.csproj.SuggestedBindingRedirects.cache
+C:\Users\PSCAD\Desktop\UnifiedNumber\UnifiedNumber\UnifiedNumber\UnifiedNumber\obj\Debug\unifiednumber.UnifiedNumber.resources
+C:\Users\PSCAD\Desktop\UnifiedNumber\UnifiedNumber\UnifiedNumber\UnifiedNumber\obj\Debug\UnifiedNumber.Properties.Resources.resources
+C:\Users\PSCAD\Desktop\UnifiedNumber\UnifiedNumber\UnifiedNumber\UnifiedNumber\obj\Debug\UnifiedNumber.csproj.GenerateResource.cache
+C:\Users\PSCAD\Desktop\UnifiedNumber\UnifiedNumber\UnifiedNumber\UnifiedNumber\obj\Debug\UnifiedNumber.csproj.CoreCompileInputs.cache
+C:\Users\PSCAD\Desktop\UnifiedNumber\UnifiedNumber\UnifiedNumber\UnifiedNumber\obj\Debug\UnifiedNumber.exe
+C:\Users\PSCAD\Desktop\UnifiedNumber\UnifiedNumber\UnifiedNumber\UnifiedNumber\obj\Debug\UnifiedNumber.pdb

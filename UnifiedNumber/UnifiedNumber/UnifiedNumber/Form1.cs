@@ -34,5 +34,27 @@ namespace unifiednumber
             valuelabel.Text = Convert.ToString(temp);
 
         }
+
+        private void translatebutton_Click(object sender, EventArgs e)
+        {
+            
+                if (arabiccharbutton.Checked == true)
+                {
+                   
+                }
+                if (chinesecharbutton.Checked == true)
+                {
+                    
+                }
+                if (thaicharbutton.Checked == true)
+                {
+                    
+                }
+                if (romanButton.Checked == true)
+                {
+
+                }
+
+        }
     }
 }
