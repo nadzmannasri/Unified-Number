@@ -54,7 +54,7 @@
             // chinesecharbutton
             // 
             this.chinesecharbutton.AutoSize = true;
-            this.chinesecharbutton.Location = new System.Drawing.Point(209, 136);
+            this.chinesecharbutton.Location = new System.Drawing.Point(209, 186);
             this.chinesecharbutton.Margin = new System.Windows.Forms.Padding(2);
             this.chinesecharbutton.Name = "chinesecharbutton";
             this.chinesecharbutton.Size = new System.Drawing.Size(112, 17);
@@ -66,7 +66,7 @@
             // arabiccharbutton
             // 
             this.arabiccharbutton.AutoSize = true;
-            this.arabiccharbutton.Location = new System.Drawing.Point(209, 157);
+            this.arabiccharbutton.Location = new System.Drawing.Point(209, 207);
             this.arabiccharbutton.Margin = new System.Windows.Forms.Padding(2);
             this.arabiccharbutton.Name = "arabiccharbutton";
             this.arabiccharbutton.Size = new System.Drawing.Size(104, 17);
@@ -78,7 +78,7 @@
             // thaicharbutton
             // 
             this.thaicharbutton.AutoSize = true;
-            this.thaicharbutton.Location = new System.Drawing.Point(209, 178);
+            this.thaicharbutton.Location = new System.Drawing.Point(209, 228);
             this.thaicharbutton.Margin = new System.Windows.Forms.Padding(2);
             this.thaicharbutton.Name = "thaicharbutton";
             this.thaicharbutton.Size = new System.Drawing.Size(95, 17);
@@ -89,7 +89,7 @@
             // 
             // translatebutton
             // 
-            this.translatebutton.Location = new System.Drawing.Point(209, 216);
+            this.translatebutton.Location = new System.Drawing.Point(209, 266);
             this.translatebutton.Margin = new System.Windows.Forms.Padding(2);
             this.translatebutton.Name = "translatebutton";
             this.translatebutton.Size = new System.Drawing.Size(75, 19);
@@ -101,13 +101,13 @@
             // 
             // AnswertextBox
             // 
-            this.AnswertextBox.Location = new System.Drawing.Point(207, 240);
+            this.AnswertextBox.Location = new System.Drawing.Point(207, 290);
             this.AnswertextBox.Margin = new System.Windows.Forms.Padding(2);
             this.AnswertextBox.Name = "AnswertextBox";
             this.AnswertextBox.Size = new System.Drawing.Size(173, 20);
             this.AnswertextBox.TabIndex = 5;
-            this.AnswertextBox.Text = "Answer";
             this.AnswertextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.AnswertextBox.TextChanged += new System.EventHandler(this.AnswertextBox_TextChanged);
             // 
             // label1
             // 
@@ -123,7 +123,7 @@
             // romanButton
             // 
             this.romanButton.AutoSize = true;
-            this.romanButton.Location = new System.Drawing.Point(209, 197);
+            this.romanButton.Location = new System.Drawing.Point(209, 247);
             this.romanButton.Name = "romanButton";
             this.romanButton.Size = new System.Drawing.Size(99, 17);
             this.romanButton.TabIndex = 7;
@@ -152,7 +152,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(169, 116);
+            this.label2.Location = new System.Drawing.Point(169, 166);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(251, 13);
             this.label2.TabIndex = 10;
