@@ -33,13 +33,13 @@
             this.arabiccharbutton = new System.Windows.Forms.RadioButton();
             this.thaicharbutton = new System.Windows.Forms.RadioButton();
             this.translatebutton = new System.Windows.Forms.Button();
-            this.AnswertextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.romanButton = new System.Windows.Forms.RadioButton();
             this.enterbutton = new System.Windows.Forms.Button();
             this.valuelabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.MsgLabel = new System.Windows.Forms.Label();
+            this.answerlabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Valuetextbox
@@ -99,23 +99,14 @@
             this.translatebutton.UseVisualStyleBackColor = true;
             this.translatebutton.Click += new System.EventHandler(this.translatebutton_Click);
             // 
-            // AnswertextBox
-            // 
-            this.AnswertextBox.Location = new System.Drawing.Point(207, 290);
-            this.AnswertextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.AnswertextBox.Name = "AnswertextBox";
-            this.AnswertextBox.Size = new System.Drawing.Size(173, 20);
-            this.AnswertextBox.TabIndex = 5;
-            this.AnswertextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.AnswertextBox.TextChanged += new System.EventHandler(this.AnswertextBox_TextChanged);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(209, 36);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(155, 27);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 13);
+            this.label1.Size = new System.Drawing.Size(254, 39);
             this.label1.TabIndex = 6;
             this.label1.Text = "Unified Number";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -152,9 +143,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(169, 166);
+            this.label2.BackColor = System.Drawing.Color.Red;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Yellow;
+            this.label2.Location = new System.Drawing.Point(59, 156);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(251, 13);
+            this.label2.Size = new System.Drawing.Size(442, 24);
             this.label2.TabIndex = 10;
             this.label2.Text = "- Please choose language before clicking translate -";
             // 
@@ -167,18 +161,28 @@
             this.MsgLabel.TabIndex = 11;
             this.MsgLabel.Text = "Message:";
             // 
+            // answerlabel
+            // 
+            this.answerlabel.AutoSize = true;
+            this.answerlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answerlabel.Location = new System.Drawing.Point(209, 302);
+            this.answerlabel.Name = "answerlabel";
+            this.answerlabel.Size = new System.Drawing.Size(105, 31);
+            this.answerlabel.TabIndex = 12;
+            this.answerlabel.Text = "Answer";
+            // 
             // UnifiedNumber
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.answerlabel);
             this.Controls.Add(this.MsgLabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.valuelabel);
             this.Controls.Add(this.enterbutton);
             this.Controls.Add(this.romanButton);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.AnswertextBox);
             this.Controls.Add(this.translatebutton);
             this.Controls.Add(this.thaicharbutton);
             this.Controls.Add(this.arabiccharbutton);
@@ -199,13 +203,13 @@
         private System.Windows.Forms.RadioButton arabiccharbutton;
         private System.Windows.Forms.RadioButton thaicharbutton;
         private System.Windows.Forms.Button translatebutton;
-        private System.Windows.Forms.TextBox AnswertextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RadioButton romanButton;
         private System.Windows.Forms.Button enterbutton;
         private System.Windows.Forms.Label valuelabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label MsgLabel;
+        private System.Windows.Forms.Label answerlabel;
     }
 }
 
