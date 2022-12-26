@@ -143,9 +143,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Red;
+            this.label2.BackColor = System.Drawing.Color.Yellow;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Yellow;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(59, 156);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(442, 24);
@@ -155,9 +155,11 @@
             // MsgLabel
             // 
             this.MsgLabel.AutoSize = true;
-            this.MsgLabel.Location = new System.Drawing.Point(209, 100);
+            this.MsgLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MsgLabel.ForeColor = System.Drawing.Color.Red;
+            this.MsgLabel.Location = new System.Drawing.Point(81, 101);
             this.MsgLabel.Name = "MsgLabel";
-            this.MsgLabel.Size = new System.Drawing.Size(53, 13);
+            this.MsgLabel.Size = new System.Drawing.Size(78, 20);
             this.MsgLabel.TabIndex = 11;
             this.MsgLabel.Text = "Message:";
             // 
@@ -165,7 +167,7 @@
             // 
             this.answerlabel.AutoSize = true;
             this.answerlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerlabel.Location = new System.Drawing.Point(209, 302);
+            this.answerlabel.Location = new System.Drawing.Point(70, 302);
             this.answerlabel.Name = "answerlabel";
             this.answerlabel.Size = new System.Drawing.Size(105, 31);
             this.answerlabel.TabIndex = 12;
@@ -188,7 +190,9 @@
             this.Controls.Add(this.arabiccharbutton);
             this.Controls.Add(this.chinesecharbutton);
             this.Controls.Add(this.Valuetextbox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "UnifiedNumber";
             this.Text = "UnifiedNumber";
             this.ResumeLayout(false);
