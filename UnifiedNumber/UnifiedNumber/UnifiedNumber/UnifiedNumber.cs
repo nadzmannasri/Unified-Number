@@ -66,5 +66,58 @@ namespace unifiednumber
             }
                 return ArbStr;
         }
+        public string ToThai()
+        {
+
+            string ThaiStr = "";
+            string DecStr = _value.ToString();
+
+            for (int c = 0; c < DecStr.Length; c++)
+            {
+                if (DecStr[c] == '0')
+                {
+                    ThaiStr = ThaiStr + "๐";
+                }
+                else if (DecStr[c] == '1')
+                {
+                    ThaiStr = ThaiStr + "๑";
+                }
+                else if (DecStr[c] == '2')
+                {
+                    ThaiStr = ThaiStr + "๒";
+                }
+                else if (DecStr[c] == '3')
+                {
+                    ThaiStr = ThaiStr + "๓";
+                }
+                else if (DecStr[c] == '4')
+                {
+                    ThaiStr = ThaiStr + "๔";
+                }
+                else if (DecStr[c] == '5')
+                {
+                    ThaiStr = ThaiStr + "๕";
+                }
+                else if (DecStr[c] == '6')
+                {
+                    ThaiStr = ThaiStr + "๖";
+                }
+                else if (DecStr[c] == '7')
+                {
+                    ThaiStr = ThaiStr + "๗";
+                }
+                else if (DecStr[c] == '8')
+                {
+                    ThaiStr = ThaiStr + "๘";
+                }
+                else if (DecStr[c] == '9')
+                {
+                    ThaiStr = ThaiStr + "๙";
+                }
+
+            }
+            return ThaiStr;
+        }
+        
     }
 }
