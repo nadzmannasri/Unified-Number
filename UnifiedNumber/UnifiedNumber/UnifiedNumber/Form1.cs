@@ -48,8 +48,8 @@ namespace unifiednumber
             if (chinesecharbutton.Checked == true)
             {
                 MsgLabel.Text = "Message: ";
-                string RomanStr = Convert.ToString(myunifiednumber.ToChinese());
-                answerlabel.Text = RomanStr;
+                string ChnStr = Convert.ToString(myunifiednumber.ToChinese());
+                answerlabel.Text = ChnStr;
 
 
             }
