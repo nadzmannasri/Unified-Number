@@ -47,6 +47,10 @@ namespace unifiednumber
 
             if (chinesecharbutton.Checked == true)
             {
+                MsgLabel.Text = "Message: ";
+                string RomanStr = Convert.ToString(myunifiednumber.ToChinese());
+                answerlabel.Text = RomanStr;
+
 
             }
             if (thaicharbutton.Checked == true)
@@ -57,38 +61,19 @@ namespace unifiednumber
             }
             if (romanButton.Checked == true)
             {
-                int DecStr = Convert.ToInt32( valuelabel.Text);
+                int DecInt = Convert.ToInt32(Valuetextbox.Text);
+                if (DecInt == 0)
                 {
-                    string romanResult = string.Empty;
-                    string[] romanLetters = {"M","CM","D","CD","C","XC","L","XL", "X","IX","V","IV","I"};
-                    int[] numbers = {1000,900,500,400,100,90,50,40,10,9,5,4,1};
-                    int i = 0;
-                    Convert.ToString(numbers);
-                    if (DecStr == 0)
-                    {
-                        MsgLabel.Text = "Message: There is no single digit '0' in roman numbers";
-
-                    }
-                    else
-                    {
-                        MsgLabel.Text = "Message: ";
-                        while (DecStr != 0)
-                        {
-                            if (DecStr >= numbers[i])
-                            {
-                                DecStr -= numbers[i];
-                                romanResult += romanLetters[i];
-                            }
-                            else
-                            {
-                                i++;
-                            }
-                        }
-                    }
-                    Convert.ToString(romanResult);
-                    answerlabel.Text = romanResult;
+                    MsgLabel.Text = "Message: There is no single digit '0' in roman number ";
                 }
 
+                if (DecInt > 0)
+                {
+                    MsgLabel.Text = "Message: ";
+                    string RomanStr = Convert.ToString(myunifiednumber.ToRoman());
+                    answerlabel.Text = RomanStr;
+
+                }
             }
 
         }

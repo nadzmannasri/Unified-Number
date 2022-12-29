@@ -118,6 +118,51 @@ namespace unifiednumber
             }
             return ThaiStr;
         }
-        
+        public string ToRoman()
+        {
+            int DecStr = _value;
+            string RomanStr = string.Empty;
+            string[] romanLetters = { "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I" };
+            int[] numbers = { 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 };
+            int i = 0;
+            while (DecStr != 0)
+            {
+                if (DecStr >= numbers[i])
+                {
+                    DecStr -= numbers[i];
+                    RomanStr += romanLetters[i];
+                }
+                else
+                {
+                    i++;
+                }
+            }
+            return RomanStr;
+        }
+        public string ToChinese()
+        {
+            int DecStr = _value;
+            string[] chineseNumbers = { "零", "一", "二", "三", "四", "五", "六", "七", "八", "九" };
+            string[] chineseUnit = { "", "十", "百", "千", "万", "十万", "百万", "千万", "亿" };
+
+            string ChnStr = "";
+            int i = 0;
+            do
+            {
+                int numberAtUnit = DecStr % 10;
+                if (numberAtUnit != 0 || (DecStr == 0 && ChnStr == ""))
+                {
+                    ChnStr = chineseNumbers[numberAtUnit] + chineseUnit[i] + ChnStr;
+                }
+                else if (numberAtUnit == 0 && ChnStr != "" && ChnStr[0] != '零')
+                {
+                    ChnStr = "零" + ChnStr;
+                }
+                i++;
+                DecStr /= 10;
+            } while (DecStr > 0);
+
+            return ChnStr;
+        }
     }
 }

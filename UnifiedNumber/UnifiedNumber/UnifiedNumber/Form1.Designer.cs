@@ -44,6 +44,7 @@
             // 
             // Valuetextbox
             // 
+            this.Valuetextbox.BackColor = System.Drawing.Color.White;
             this.Valuetextbox.Location = new System.Drawing.Point(209, 70);
             this.Valuetextbox.Margin = new System.Windows.Forms.Padding(2);
             this.Valuetextbox.Name = "Valuetextbox";
@@ -54,10 +55,11 @@
             // chinesecharbutton
             // 
             this.chinesecharbutton.AutoSize = true;
+            this.chinesecharbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chinesecharbutton.Location = new System.Drawing.Point(209, 186);
             this.chinesecharbutton.Margin = new System.Windows.Forms.Padding(2);
             this.chinesecharbutton.Name = "chinesecharbutton";
-            this.chinesecharbutton.Size = new System.Drawing.Size(112, 17);
+            this.chinesecharbutton.Size = new System.Drawing.Size(143, 21);
             this.chinesecharbutton.TabIndex = 1;
             this.chinesecharbutton.TabStop = true;
             this.chinesecharbutton.Text = "Chinese Character";
@@ -66,10 +68,11 @@
             // arabiccharbutton
             // 
             this.arabiccharbutton.AutoSize = true;
+            this.arabiccharbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.arabiccharbutton.Location = new System.Drawing.Point(209, 207);
             this.arabiccharbutton.Margin = new System.Windows.Forms.Padding(2);
             this.arabiccharbutton.Name = "arabiccharbutton";
-            this.arabiccharbutton.Size = new System.Drawing.Size(104, 17);
+            this.arabiccharbutton.Size = new System.Drawing.Size(132, 21);
             this.arabiccharbutton.TabIndex = 2;
             this.arabiccharbutton.TabStop = true;
             this.arabiccharbutton.Text = "Arabic Character";
@@ -78,10 +81,11 @@
             // thaicharbutton
             // 
             this.thaicharbutton.AutoSize = true;
+            this.thaicharbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.thaicharbutton.Location = new System.Drawing.Point(209, 228);
             this.thaicharbutton.Margin = new System.Windows.Forms.Padding(2);
             this.thaicharbutton.Name = "thaicharbutton";
-            this.thaicharbutton.Size = new System.Drawing.Size(95, 17);
+            this.thaicharbutton.Size = new System.Drawing.Size(120, 21);
             this.thaicharbutton.TabIndex = 3;
             this.thaicharbutton.TabStop = true;
             this.thaicharbutton.Text = "Thai Character";
@@ -89,24 +93,25 @@
             // 
             // translatebutton
             // 
+            this.translatebutton.BackColor = System.Drawing.Color.Aqua;
+            this.translatebutton.Font = new System.Drawing.Font("Kristen ITC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.translatebutton.Location = new System.Drawing.Point(209, 266);
             this.translatebutton.Margin = new System.Windows.Forms.Padding(2);
             this.translatebutton.Name = "translatebutton";
-            this.translatebutton.Size = new System.Drawing.Size(75, 19);
+            this.translatebutton.Size = new System.Drawing.Size(95, 25);
             this.translatebutton.TabIndex = 4;
             this.translatebutton.Text = "Translate";
-            this.translatebutton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.translatebutton.UseVisualStyleBackColor = true;
+            this.translatebutton.UseVisualStyleBackColor = false;
             this.translatebutton.Click += new System.EventHandler(this.translatebutton_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(155, 27);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 39);
+            this.label1.Size = new System.Drawing.Size(291, 42);
             this.label1.TabIndex = 6;
             this.label1.Text = "Unified Number";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -114,9 +119,10 @@
             // romanButton
             // 
             this.romanButton.AutoSize = true;
+            this.romanButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.romanButton.Location = new System.Drawing.Point(209, 247);
             this.romanButton.Name = "romanButton";
-            this.romanButton.Size = new System.Drawing.Size(99, 17);
+            this.romanButton.Size = new System.Drawing.Size(125, 21);
             this.romanButton.TabIndex = 7;
             this.romanButton.TabStop = true;
             this.romanButton.Text = "Roman Number";
@@ -124,12 +130,14 @@
             // 
             // enterbutton
             // 
+            this.enterbutton.BackColor = System.Drawing.Color.Aqua;
+            this.enterbutton.Font = new System.Drawing.Font("Kristen ITC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enterbutton.Location = new System.Drawing.Point(318, 68);
             this.enterbutton.Name = "enterbutton";
             this.enterbutton.Size = new System.Drawing.Size(75, 23);
             this.enterbutton.TabIndex = 8;
             this.enterbutton.Text = "Enter";
-            this.enterbutton.UseVisualStyleBackColor = true;
+            this.enterbutton.UseVisualStyleBackColor = false;
             this.enterbutton.Click += new System.EventHandler(this.enterbutton_Click);
             // 
             // valuelabel
@@ -144,22 +152,23 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Yellow;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Kristen ITC", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(59, 156);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(442, 24);
+            this.label2.Size = new System.Drawing.Size(485, 27);
             this.label2.TabIndex = 10;
             this.label2.Text = "- Please choose language before clicking translate -";
             // 
             // MsgLabel
             // 
             this.MsgLabel.AutoSize = true;
-            this.MsgLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MsgLabel.BackColor = System.Drawing.Color.Silver;
+            this.MsgLabel.Font = new System.Drawing.Font("Trebuchet MS", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MsgLabel.ForeColor = System.Drawing.Color.Red;
-            this.MsgLabel.Location = new System.Drawing.Point(81, 101);
+            this.MsgLabel.Location = new System.Drawing.Point(72, 102);
             this.MsgLabel.Name = "MsgLabel";
-            this.MsgLabel.Size = new System.Drawing.Size(78, 20);
+            this.MsgLabel.Size = new System.Drawing.Size(82, 23);
             this.MsgLabel.TabIndex = 11;
             this.MsgLabel.Text = "Message:";
             // 
@@ -177,6 +186,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.answerlabel);
             this.Controls.Add(this.MsgLabel);
