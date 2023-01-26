@@ -40,6 +40,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.MsgLabel = new System.Windows.Forms.Label();
             this.answerlabel = new System.Windows.Forms.Label();
+            this.revertbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Valuetextbox
@@ -182,12 +183,25 @@
             this.answerlabel.TabIndex = 12;
             this.answerlabel.Text = "Answer";
             // 
+            // revertbutton
+            // 
+            this.revertbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.revertbutton.Font = new System.Drawing.Font("Kristen ITC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.revertbutton.Location = new System.Drawing.Point(310, 266);
+            this.revertbutton.Name = "revertbutton";
+            this.revertbutton.Size = new System.Drawing.Size(90, 25);
+            this.revertbutton.TabIndex = 13;
+            this.revertbutton.Text = "Revert";
+            this.revertbutton.UseVisualStyleBackColor = false;
+            this.revertbutton.Click += new System.EventHandler(this.revertbutton_Click);
+            // 
             // UnifiedNumber
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.revertbutton);
             this.Controls.Add(this.answerlabel);
             this.Controls.Add(this.MsgLabel);
             this.Controls.Add(this.label2);
@@ -224,6 +238,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label MsgLabel;
         private System.Windows.Forms.Label answerlabel;
+        private System.Windows.Forms.Button revertbutton;
     }
 }
 

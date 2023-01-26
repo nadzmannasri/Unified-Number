@@ -8,7 +8,7 @@ namespace unifiednumber
 {
     class unifiednumber
     {
-        private int _value;
+       /* private int _value;
 
         public int Value 
         {   
@@ -163,6 +163,6 @@ namespace unifiednumber
             } while (DecStr > 0);
 
             return ChnStr;
-        }
+        }*/
     }
 }

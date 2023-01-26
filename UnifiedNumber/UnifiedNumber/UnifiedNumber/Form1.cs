@@ -8,12 +8,13 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UnifiedNumeral;
 
 namespace unifiednumber
 {
     public partial class UnifiedNumber : Form
     {
-        unifiednumber myunifiednumber = new unifiednumber();
+        UnifiedNumeral.UnifiedNumeral myunifiednumber = new UnifiedNumeral.UnifiedNumeral();
         public UnifiedNumber()
         {
             InitializeComponent();
@@ -41,7 +42,7 @@ namespace unifiednumber
             if (arabiccharbutton.Checked == true)
             {
                 MsgLabel.Text = "Message: ";
-                answerlabel.Text = myunifiednumber.ToArabic();
+                answerlabel.Text =myunifiednumber.ToArabic();
             }
 
 
@@ -77,6 +78,35 @@ namespace unifiednumber
             }
 
         }
-     
+
+        private void revertbutton_Click(object sender, EventArgs e)
+        {
+            if (arabiccharbutton.Checked == true)
+            {
+                MsgLabel.Text = "Message: ";
+                answerlabel.Text = valuelabel.Text;
+            }
+
+
+            if (chinesecharbutton.Checked == true)
+            {
+                MsgLabel.Text = "Message: "; 
+                answerlabel.Text = valuelabel.Text;
+
+
+            }
+            if (thaicharbutton.Checked == true)
+            {
+                MsgLabel.Text = "Message: ";
+                answerlabel.Text = valuelabel.Text;
+
+            }
+            if (romanButton.Checked == true)
+            {
+                MsgLabel.Text = "Message: ";
+                answerlabel.Text = valuelabel.Text;
+            }
+
+        }
     }
 }
