@@ -84,27 +84,31 @@ namespace unifiednumber
             if (arabiccharbutton.Checked == true)
             {
                 MsgLabel.Text = "Message: ";
-                answerlabel.Text = valuelabel.Text;
+                myunifiednumber.FromArabic(answerlabel.Text);
+                answerlabel.Text = myunifiednumber.Value.ToString();
             }
 
 
             if (chinesecharbutton.Checked == true)
             {
-                MsgLabel.Text = "Message: "; 
-                answerlabel.Text = valuelabel.Text;
+                MsgLabel.Text = "Message: ";
+                myunifiednumber.FromChinese(answerlabel.Text);
+                answerlabel.Text = myunifiednumber.Value.ToString();
 
 
             }
             if (thaicharbutton.Checked == true)
             {
                 MsgLabel.Text = "Message: ";
-                answerlabel.Text = valuelabel.Text;
+                myunifiednumber.FromThai(answerlabel.Text);
+                answerlabel.Text = myunifiednumber.Value.ToString();
 
             }
             if (romanButton.Checked == true)
             {
                 MsgLabel.Text = "Message: ";
-                answerlabel.Text = valuelabel.Text;
+                myunifiednumber.FromRoman(answerlabel.Text);
+                answerlabel.Text = myunifiednumber.Value.ToString();
             }
 
         }
